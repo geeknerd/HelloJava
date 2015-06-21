@@ -1,0 +1,70 @@
+/******************************************************************************
+ *
+ * Filename :     ClimateSummary.java.
+ * Author:        Colben aldrich
+ * Date:          09/17/2014
+ * Description:   This program computes summaries of climate data.
+ *
+ ******************************************************************************/
+import java.util.Scanner;
+import java.io.*;
+
+/* Provide a description of the class */
+public class ClimateSummary
+{
+	public static void main (String [] args) throws FileNotFoundException
+	{
+		Scanner scnr;
+		File file = new File("ClimateData.txt");
+		scnr = new Scanner(file);
+		
+		
+		int tempOne = 0;
+		double precipOne = 0.0;
+		String todayTempIs = "";
+		String todayPrecipIs = "";
+		
+		tempOne = scnr.nextInt();
+	    precipOne = scnr.nextDouble();
+			
+		
+	  
+       
+       
+	
+       if (tempOne >= 60 ){
+    	   todayTempIs = " hot";
+    	   }
+       else if (tempOne < 60){
+    	   todayTempIs = " cold";
+       }
+
+        if (precipOne > 0.1){
+    	   todayPrecipIs = "rainy.";
+       }
+        else if (precipOne < 0.1){
+        	todayPrecipIs = "not rainy.";
+       }
+        
+        System.out.print("It is" + todayTempIs + "," + " and it is " + todayPrecipIs);
+        //  For reading with non-numerical answers, use "sc.next();" to read the input
+        
+        //  For answers with numerical answers, use either "sc.nextInt();" or "sc.next()" 
+        //  depending on the  data type (int for temperature/double for precipitation)
+        
+        // Calculate the different summary information
+        
+	// Print the summary information as specified
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	}
+}
