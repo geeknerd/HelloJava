@@ -26,6 +26,7 @@ public class HelloJava {
 			System.out.println(input[i] + ", ");
 		}
 
+		System.out.println("This should test push");
 	}
 
 	public char[] incChar(char[] input) {
