@@ -2,6 +2,12 @@ package reverse.integer;
 
 import org.junit.Test;
 
+/**
+ * 
+ * @author Yi Xia
+ * @date Oct 20, 2015
+ *
+ */
 public class Reverse_Integer {
 	public long reverse(long x) {
 		String s_x = String.valueOf(x);
