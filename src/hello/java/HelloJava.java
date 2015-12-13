@@ -1,7 +1,8 @@
 package hello.java;
-import java.util.Stack;
+import static org.junit.Assert.assertArrayEquals;
 
-import static org.junit.Assert.*;
+import java.util.Date;
+
 import org.junit.Test;
 
 public class HelloJava {
@@ -28,6 +29,10 @@ public class HelloJava {
 		}
 
 		System.out.println("This should test push");
+		int x = 8 / 3;
+		System.out.println("The answer is "+x);
+		Date date = new Date();
+		System.out.println(String.format("%tY%tH%tM", date,date,date));
 	}
 
 	public char[] incChar(char[] input) {
